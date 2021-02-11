@@ -20,4 +20,8 @@ export class SeguroService {
         (err) => console.log('Erro ao cadastrar seguro')
       );
   }
+  
+  listar(): Observable<Seguro[]> {
+    return this.http.get<Seguro[]>(this.apiSeguros + '/api/seguros');
+  }
 }
