@@ -25,10 +25,11 @@ export class CadastrarSeguroComponent implements OnInit {
   }
 
   cadastrar() {
-    this.seguroService.cadastrar(this.seguro);
+    this.seguro.id = this.seguro.placaCarro;
+    this.seguroService.salvar(this.seguro);
   }
 
   enviarNotificacao() {
-    
+
   }
 }
