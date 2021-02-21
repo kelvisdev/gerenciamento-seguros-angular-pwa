@@ -1,3 +1,7 @@
 .lista-seguros {
     width: 100%;
 }
+
+.ui.fitted.divider {
+	margin: 8px 0;
+}

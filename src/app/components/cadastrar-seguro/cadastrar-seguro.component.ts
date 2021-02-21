@@ -1,3 +1,4 @@
+import { PushNotificationService } from './../../shared/services/push-notification.service';
 import { SeguroService } from './../../shared/services/seguro.service';
 import { Seguro } from './../../shared/models/seguro';
 import { MarcaCarroService } from './../../shared/services/marca-carro.service';
@@ -17,7 +18,8 @@ export class CadastrarSeguroComponent implements OnInit {
 
   constructor(
     private marcaCarroService: MarcaCarroService,
-    public seguroService: SeguroService
+    public seguroService: SeguroService,
+    private pushNotificationService: PushNotificationService
   ) { }
 
   ngOnInit(): void {
@@ -30,6 +32,7 @@ export class CadastrarSeguroComponent implements OnInit {
   }
 
   enviarNotificacao() {
-
+    this.pushNotificationService.enviar();
   }
+
 }
