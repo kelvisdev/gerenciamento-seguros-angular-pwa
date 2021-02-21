@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "curso-pwa-angular"
+    }
+  },
+  "defaultProject": "curso-pwa-angular",
+  "cli": {
+    "analytics": "555cd30e-faef-4c3d-8d02-ca2e5071bb3e"
+  }
 }
