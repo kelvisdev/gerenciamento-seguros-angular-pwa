@@ -31,14 +31,14 @@
       "name": "car-api",
       "urls": [
         "https://www.carqueryapi.com/api/0.3/*",
-        "http://localhost:9000/*"
+        "http://127.0.0.1:9000/*"
       ],
       "cacheConfig": {
         "strategy": "performance",
         "maxSize": 10000,
-        "maxAge": "10h",
+        "maxAge": "6h",
         "timeout": "5s"
-      }      
+      }
     }
   ]
 }
